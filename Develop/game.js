@@ -1,3 +1,56 @@
+var startButton = document.getElementById('start-button')
+var questionContainerElement = document.getElementById('question-container')
+var questionElement = document.getElementById('question')
+var answerButtonsElement = document.getElementById('answer-buttons')
+
+var shuffledQuestions, currentQuestionIndex
+
+startButton.addEventListener('click', startGame)
+
+
+function startGame() {
+    
+    startButton.classList.add('hide')
+    shuffleQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestionindex = 0
+    questionContainerElement.classList.remove('hide')
+    setNextQuestion()
+}
+
+function setNextQuestion() {
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.question
+
+}
+
+function selectAnswer() {
+
+}
+
+var questions =  [
+    {
+       question: 'who is the leader of the Autobots',
+       answers: [
+           { text: 'Optimus Prime', correct: true},
+           { text: 'Megatron', correct: false},
+           { text: 'Bumblebee', correct: false},
+           { text: 'Starscream', correct: false}
+       ]
+    
+    }
+]
+
+
+
+
+
+
+
+
 /*document.addEventListener('DOMContentLoaded', () => {
     const timeLeftDisplay = document.querySelector('#time-left')
     const startBtn = document.querySelector('#start-button')
