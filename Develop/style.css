@@ -19,3 +19,30 @@ main {
     align-items: center;
 }
 
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(53, 197, 149);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: lightcoral;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-color: black;
+
+}
+
+.btn:hover {
+    border-color:darkslateblue;
+}
