@@ -1,3 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const timeLeftDisplay = document.querySelector('#time-left')
+    const startBtn = document.querySelector('#start-button')
+    let timeLeft = 75
+
+    function countDown(){
+        setInterval(function(){
+            if(timeLeft <= 0 ) {
+                clearInterval(timeLeft = 0)
+            }
+            timeLeftDisplay.innerHTML = timeLeft
+            timeLeft -=1
+        }, 1000)
+    }
+
+     startBtn.addEventListener('click', countDown)
+})
+
+
+
+
+
+
+
 // DECLARE a starting 'score'
 
 // DECLARE an array list of 'questions'
@@ -35,4 +59,4 @@
 
 // Creat 'renderCurrentQuestion' function
 
-    // Access the current question datta from question[questionIndex]
+    // Access the current question datta from question index array
