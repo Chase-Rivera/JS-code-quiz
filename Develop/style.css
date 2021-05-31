@@ -1,0 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+

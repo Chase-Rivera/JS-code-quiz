@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const timeLeftDisplay = document.querySelector('#time-left')
     const startBtn = document.querySelector('#start-button')
     let timeLeft = 75
@@ -59,4 +59,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Creat 'renderCurrentQuestion' function
 
-    // Access the current question datta from question index array
+    // Access the current question datta from question index array*/

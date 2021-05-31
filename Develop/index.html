@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-       <h3>Seconds left: <span id="time-left">75</span></h3>
-       <button id="start-button">Start</button> 
+       <!--<h3>Seconds left: <span id="time-left">75</span></h3>-->
+       
        <nav>
            <ul>
                <li>
@@ -19,10 +19,26 @@
            </ul>
        </nav>
     </header>
-    <!-- Nav bar with a link on the left and the timer on the right-->
-
+    
+    <main>
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-button" class="start-btn btn">Start</button>
+                <button id="next-button" class="next-btn btn hide">Next</button>  
+            </div>
+        </div>
+    </main>
     <!-- start game section-->
-        
+    <!--<button id="start-button">Start</button>--> 
         <!-- strt game button #start-button-->
     
     <!-- Container for the start game section -->
