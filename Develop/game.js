@@ -3,7 +3,8 @@ var questionContainerElement = document.getElementById('question-container')
 var questionElement = document.getElementById('question')
 var answerButtonsElement = document.getElementById('answer-buttons')
 
-var shuffledQuestions, currentQuestionIndex
+
+var currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
 
@@ -18,9 +19,11 @@ function startGame() {
 }
 
 function setNextQuestion() {
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    showQuestion([currentQuestionIndex])
 
 }
+
+
 
 function showQuestion(question) {
     questionElement.innerText = question.question
