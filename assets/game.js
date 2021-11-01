@@ -32,10 +32,21 @@ var finalScoreEl = document.querySelector("#finalScore")
 var plyrInitEl = document.querySelector("#plyrInit")
 var submitBtnEl = document.querySelector("#submitBtn")
 
+questPageEl.style.display="none";
+endPageEl.style.display="none";
 
+var timerId;
+var timerLeft=60;
+var questionIndex=0;
+var score=0;
 
-var timer;
-var timerLeft;
+function countdown(){
+    timerLeft--;
+    timerEl.textContent=`time:${timerLeft}`;
+    if (timerLeft <= 0){
+        complete();
+    }
+};
 
 
 
