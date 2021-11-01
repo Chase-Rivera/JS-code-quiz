@@ -21,11 +21,17 @@ var questionsArray = [
     }
 ]
 
-var startButton = document.getElementById('start-button')
-var questionContainerElement = document.getElementById('question-container')
-var questionElement = document.getElementById('question')
-var answerButtonsElement = document.getElementById('answer-buttons')
-var timerElement = document.querySelector("time-left");
+var timerEl = document.querySelector("#timer")
+var startPageEl = document.querySelector("#startPage")
+var startBtnEl = document.querySelector("#startBtn")
+var questPageEl = document.querySelector("#questPage")
+var questTitleEl = document.querySelector("#questTitle")
+var questOptsEl = document.querySelector("#questOpts")
+var endPageEl = document.querySelector("#endPage")
+var finalScoreEl = document.querySelector("#finalScore")
+var plyrInitEl = document.querySelector("#plyrInit")
+var submitBtnEl = document.querySelector("#submitBtn")
+
 
 
 var timer;
