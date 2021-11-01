@@ -83,6 +83,13 @@ function compAnsw(){
 
 };
 
+function complete(){
+    clearInterval(timerId);
+    questPageEl.style.display="none";
+    endPageEl.style.display="block";
+    timerEl.style.display="none";
+    finalScoreEl.textContent=timerLeft;
+};
 
 
 
