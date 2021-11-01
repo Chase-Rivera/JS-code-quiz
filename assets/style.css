@@ -62,3 +62,20 @@ main {
 .hide {
     display: none;
 }
+
+.large-font {
+    font-size: 3.5em;
+    text-align:center;
+  }
+  
+  .timer {
+    height: 200px;
+    padding: 10px;
+    color: rgb(14, 0, 0);
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .timer-text {
+    padding: 55px;
+  }

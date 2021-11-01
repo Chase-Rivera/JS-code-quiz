@@ -2,11 +2,14 @@ var startButton = document.getElementById('start-button')
 var questionContainerElement = document.getElementById('question-container')
 var questionElement = document.getElementById('question')
 var answerButtonsElement = document.getElementById('answer-buttons')
+var timerElement = document.querySelector("time-left");
 
 
-var currentQuestionIndex
+var timer;
+var timerLeft;
 
-startButton.addEventListener('click', startGame)
+
+
 
 
 function startGame() {
@@ -16,6 +19,8 @@ function startGame() {
     currentQuestionindex = questions
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
+    startTimer();
+    timerLeft = 75
 }
 
 function setNextQuestion() {
@@ -49,28 +54,36 @@ var questions =  [
 
 
 
+function startTimer() {
+    var timerLeft = 75
+    timer = setInterval(function() {
+      timerCount--;
+      timerElement.textContent = timerCount;
+      if (timerCount >= 0) {
+        
+        if (isWin && timerCount > 0) {
+          
+          clearInterval(timer);
+          winGame();
+        }
+      }
+      
+      if (timerCount === 0) {
+        
+        clearInterval(timer);
+        loseGame();
+      }
+    }, 1000);
+  }
+
+  startButton.addEventListener('click', startGame)
 
 
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const timeLeftDisplay = document.querySelector('#time-left')
-    const startBtn = document.querySelector('#start-button')
-    let timeLeft = 75
 
-    function countDown(){
-        setInterval(function(){
-            if(timeLeft <= 0 ) {
-                clearInterval(timeLeft = 0)
-            }
-            timeLeftDisplay.innerHTML = timeLeft
-            timeLeft -=1
-        }, 1000)
-    }
 
-     startBtn.addEventListener('click', countDown)
-})
 
 
 
