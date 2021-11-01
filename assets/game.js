@@ -68,6 +68,20 @@ function genQuests(){
     });
 };
 
+function compAnsw(){
+    var options=this.value;
+    var answer=questionsArray[questionIndex].answer;
+    if (options !== answer){
+        timerLeft-=10
+    };
+    questionIndex++;
+    if(questionIndex===questionsArray.length){
+        complete();
+    }else{
+        genQuests();
+    }
+
+};
 
 
 
