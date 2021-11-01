@@ -48,6 +48,13 @@ function countdown(){
     }
 };
 
+function startGame(){
+    timerId=setInterval(countdown, 1000);
+    startPageEl.style.display="none";
+    questPageEl.style.display="block";
+    genQuests();
+};
+
 
 
 
