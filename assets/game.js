@@ -55,6 +55,19 @@ function startGame(){
     genQuests();
 };
 
+function genQuests(){
+    questOptsEl.innerHTML="";
+    var currentQuest= questionsArray[questionIndex];
+    questTitleEl.textContent= currentQuest.questions;
+    currentQuest.options.forEach(function(options){
+        var tempBtn=document.createElement("button");
+        tempBtn.setAttribute("value", options);
+        tempBtn.textContent=options;
+        tempBtn.onclick=compAnsw;
+        questOptsEl.appendChild(tempBtn);
+    });
+};
+
 
 
 
