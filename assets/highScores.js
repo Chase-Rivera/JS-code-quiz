@@ -12,7 +12,7 @@ if(allScores !==null){
     for(var i=0; i<allScores.length; i++){
         var list=document.createElement("list");
         list.textContent=allScores[i].initials +""+ allScores[i].score;
-        highScore.appendChild(list);
+        hiScore.appendChild(list);
     }
 };
 

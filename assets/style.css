@@ -1,56 +1,81 @@
-*, *::before, *::after {
+*{
     box-sizing: border-box;
     font-family:Verdana, Tahoma, sans-serif;
 }
 
-header {
-    display: flex;
-   justify-content: space-between;
-   flex-direction: row;
-}
 
-main {
+.main {
     padding: 0;
     margin: 0;
     display: flex;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
+    text-align: center;
     align-items: center;
+    color:darkcyan
 }
 
-.container {
-    width: 800px;
-    max-width: 80%;
+#startPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
     background-color: rgb(53, 197, 149);
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
+    border-style: solid;
+    height: 90%;
 }
 
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap: 10px;
-    margin: 20px 0;
+#questPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    padding-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: rgb(53, 197, 149);
+    border-style: solid;
+    height: 90%;
+    
 }
 
-.btn {
-    background-color: lightcoral;
-    border-radius: 10px;
-    padding: 5px 10px;
-    border-color: black;
-
+#questOpts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
-.btn:hover {
-    border-color:darkslateblue;
+#endPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(53, 197, 149);
+    border-style: solid;
+    height: 90%;
 }
 
-.start-btn, .next-btn {
-    font-size: 1.5rem;
+#highScores {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    padding: 10px 20px;
+    background-color: rgb(53, 197, 149);
+    border-style: solid;
+    font-size: xx-large;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .controls {
