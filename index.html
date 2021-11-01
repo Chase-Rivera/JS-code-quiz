@@ -4,58 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Nerd Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-    <header>
-       <!--<h3>Seconds left: <span id="time-left">75</span></h3>-->
-       
-       <nav>
-           <ul>
-               <li>
-                   <a href="#view-highscores">View Highscores</a>
-               </li>
-           </ul>
-           <div id="time-left">
-            <div class= "timer">
-                <div class = "timer-text">
-                <div class="large-font timer-count">75</div>
-                <h3>seconds remaining</h3>
-              </div>
-           </div>
-       </nav>
-    </header>
-    
-    <main>
-        <div class="container">
-            <div id="question-container" class="hide">
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
-            </div>
-            <div class="controls">
-                <button id="start-button" class="start-btn btn">Start</button>
-                <button id="next-button" class="next-btn btn hide">Next</button>  
-            </div>
-        </div>
-    </main>
-    <!-- start game section-->
-    <!--<button id="start-button">Start</button>--> 
-        <!-- strt game button #start-button-->
-    
-    <!-- Container for the start game section -->
+   <div id="timer"></div>
+   <div id="startPage">
+       <h1>Nerd Quiz!</h1>
+       <p>This quick quiz will challenge your knowledge of all things sci-fi and fantasy! one thing to remember on this quest is that incorrect answers will dock your remaining time, so you have to be as fast as the Flash while as accurate as Hawkeye!</p>
+       <button id="startBtn">Start the quiz!</button>
+   </div>
 
-    <!-- Question section-->
-  
-    <!-- submit highscore section -->
+   <div id="questPage">
+       <h2 id="questTitle"></h2>
+       <div id="questOpts"></div>
+   </div>
 
-
-
-    <script src="game.js"></script>
+   <div id="endPage">
+       <h1><strong>You have completed this quest!</strong></h1>
+       <p>Your final score is <span id="finalScore"></span></p>
+       <p> Please enter your initials <input type="text" id="plyrInit"/><button id="submitBtn">Submit</button></p>
+   </div>
+        
+    <script src="./assets/game.js"></script>
 </body>
 </html>
