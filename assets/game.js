@@ -58,7 +58,7 @@ function startGame(){
 function genQuests(){
     questOptsEl.innerHTML="";
     var currentQuest= questionsArray[questionIndex];
-    questTitleEl.textContent= currentQuest.questions;
+    questTitleEl.textContent= currentQuest.question;
     currentQuest.options.forEach(function(options){
         var tempBtn=document.createElement("button");
         tempBtn.setAttribute("value", options);
