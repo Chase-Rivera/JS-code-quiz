@@ -1,3 +1,26 @@
+var questionsArray = [
+    {
+        question: "Who is the leader of the Autobots?",
+        options: ["Bumblebee", "Megetron", "Optimus Prime", "Ironhide"],
+        answer: "Optimus Prime"
+    },
+    {
+        question: "Who is Luke Skywalker's father?",
+        options: ["Lando Calrissian", "Darth Vader", "Han Solo", "Obi Wan Kenobi"],
+        answer: "Darth Vader"
+    },
+    {
+        question: "Who is Bilbo's cousin?",
+        options: ["Frodo", "Sam", "Mary", "Pippen"],
+        answer: "Frodo"
+    },
+    {
+        question: "Who was the first Aveneger?",
+        options: ["Iron Man", "Captain America", "Thor", "The Hulk"],
+        answer: "Captain America"
+    }
+]
+
 var startButton = document.getElementById('start-button')
 var questionContainerElement = document.getElementById('question-container')
 var questionElement = document.getElementById('question')
